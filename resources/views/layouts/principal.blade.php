@@ -13,8 +13,8 @@
             <div class="menu">
                 <ul>
                     <li><a class="{{ request()->routeIs('cliente.*') ? 'active' : '' }}" href="{{ route('cliente.index')}}">Clientes</a></li>
-                <li><a class="{{ request()->routeIs('produtos') ? 'active' : '' }}" href="{{ route('produtos' ) }}"></a>Produtos</li>
-                <li><a class="{{ request()->routeIs('departamentos') ? 'active' : '' }}" href="{{ route('departamentos') }}"></a>Departamentos</li>
+                <li><a class="{{ request()->routeIs('produtos') ? 'active' : '' }}" href="{{ route('produtos' ) }}">Produtos</a></li>
+                <li><a class="{{ request()->routeIs('departamentos') ? 'active' : '' }}" href="{{ route('departamentos') }}">Departamentos</a></li>
                 </ul> 
             </div>
         </div>
