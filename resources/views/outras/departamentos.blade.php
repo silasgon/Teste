@@ -13,21 +13,21 @@
     <li>Roupas</li>
 </ul>
 
-@component('components.alerta', ['titulo'=>'Sucesso Total', 'tipo'=>'success'])
+@alerta(['titulo'=>'Sucesso Total', 'tipo'=>'success'])
    <p><strong>Não houve Erro inesperado</strong></p>
    <p>Não ocorreu um erro inesperado</p>
-@endcomponent
-@component('components.alerta', ['titulo'=>'Informação Geral', 'tipo'=>'info'])
+@endalerta
+@alerta(['titulo'=>'Informação Geral', 'tipo'=>'info'])
    <p><strong>Evite Erro inesperado</strong></p>
    <p>Pode ocorrer um erro inesperado</p>
-@endcomponent
-@component('components.alerta', ['titulo'=>'Alerta', 'tipo'=>'warning'])
+@endalerta
+@alerta(['titulo'=>'Alerta', 'tipo'=>'warning'])
    <p><strong>Cuidado com o erro inesperado</strong></p>
    <p>Vai ocorrer um erro inesperado</p>
-@endcomponent
-@component('components.alerta', ['titulo'=>'Erro Fatal', 'tipo'=>'error'])
+@endalerta
+@alerta(['titulo'=>'Erro Fatal', 'tipo'=>'error'])
    <p><strong>Erro inesperado</strong></p>
    <p>Ocorreu um erro inesperado</p>
-@endcomponent
+@endalerta
 
 @endsection
