@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
-class CreateBrands extends Migration
+class CreateDepartaments extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateBrands extends Migration
      */
     public function up()
     {
-        Schema::create('brands', function (Blueprint $table) {
+        Schema::create('departments', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ class CreateBrands extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('brands');
+        Schema::dropIfExists('departments');
     }
 }
